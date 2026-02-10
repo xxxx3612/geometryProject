@@ -10,10 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/icon": "^2.2.1",
     "@types/three": "^0.182.0",
     "nuxt": "^4.2.2",
     "three": "^0.182.0",
     "vue": "^3.5.26",
     "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@iconify-json/logos": "^1.2.10",
+    "@iconify-json/uil": "^1.2.3",
+    "@unocss/nuxt": "^66.6.0",
+    "unocss": "^66.6.0"
   }
 }
