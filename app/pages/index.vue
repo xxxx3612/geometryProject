@@ -50,35 +50,6 @@ function reset() {
       <h1 class="title">Geometry AI Visualizer</h1>
       <p class="subtitle">输入几何题目，AI 自动生成 3D 演示</p>
       
-      <!-- 模块功能展示卡片 -->
-      <div class="my-6 p-6 border border-gray-200 rounded-xl shadow-sm bg-white hover:shadow-md transition-all duration-300 max-w-2xl w-full">
-        <div class="flex items-center justify-between mb-4">
-          <h3 class="text-xl font-bold bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text text-transparent">
-            <Icon name="logos:nuxt-icon" class="mr-2" size="1.2em"/> 
-            模块加载成功
-          </h3>
-          <span class="text-xs font-mono bg-gray-100 px-2 py-1 rounded text-gray-500">System Ready</span>
-        </div>
-        
-        <div class="grid grid-cols-2 gap-4">
-          <!-- UnoCSS 展示 -->
-          <div class="p-3 bg-blue-50 rounded-lg border border-blue-100 flex flex-col items-center text-center group cursor-default">
-            <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">🎨</div>
-            <div class="font-semibold text-blue-700">UnoCSS</div>
-            <div class="text-xs text-blue-600/80 mt-1">原子化样式引擎已就绪</div>
-          </div>
-          
-          <!-- Icon 展示 -->
-          <div class="p-3 bg-purple-50 rounded-lg border border-purple-100 flex flex-col items-center text-center group cursor-default">
-            <div class="text-3xl mb-2 group-hover:rotate-12 transition-transform">
-              <Icon name="logos:google-icon" />
-            </div>
-            <div class="font-semibold text-purple-700">Nuxt Icon</div>
-            <div class="text-xs text-purple-600/80 mt-1">海量图标库已连接</div>
-          </div>
-        </div>
-      </div>
-
       <div class="input-wrapper">
         <textarea 
           v-model="userInput" 
