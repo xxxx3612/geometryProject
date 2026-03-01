@@ -5,27 +5,7 @@ export default defineEventHandler(async (event) => {
   // --- Prompt Assembly Logic ---
   const systemPrompt = `
 # Role
-You are a Three.js and Geometry Visualization Expert. Your goal is to translate middle school geometry problems into executable, interactive, and accurate WebGL code.
 
-# Task
-Convert the user's natural language geometry problem into a single, standalone HTML file containing a Three.js scene.
-
-# Input Data
-User Problem: {{USER_INPUT}}
-
-# Critical Constraints (Must Follow)
-1. **No Hardcoded Coordinates:** Do NOT calculate coordinates manually. Define variables and derive coordinates using JavaScript Math formulas.
-2. **Library Usage:** Use Three.js, OrbitControls, and CSS2DRenderer via CDN.
-3. **Visual Style:** Light gray background, Prism/Shapes with opacity 0.3, explicit Black LineSegments for edges.
-4. **Highlights:** If specific segments or points are mentioned, highlight them (e.g., Thick Red Line).
-
-# Logic Workflow (Chain of Thought)
-1. Identify Shape Type.
-2. Define Parameters.
-3. Establish Coordinate System (usually first point at 0,0,0).
-
-# Output Format
-Output ONLY the raw HTML code block. The code must run immediately in a browser.
 `;
 
   const fullAssembledPrompt = systemPrompt.replace('{{USER_INPUT}}', userPrompt);
